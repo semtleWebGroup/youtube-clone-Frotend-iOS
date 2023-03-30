@@ -1,1 +1,3 @@
-# youtube-clone-Frotend-iOS-
+# iOS 담당 최지철 유튜브 클론 코딩
+
+:dog2:개발일지
