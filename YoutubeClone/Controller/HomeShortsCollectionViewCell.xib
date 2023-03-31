@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HomeShortsCollectionViewCell" reuseIdentifier="HomeShortsCollectionViewCell" id="gTV-IL-0wX" customClass="HomeShortsCollectionViewCell" customModule="YoutubeClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="95" height="135"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qt6-ZT-te6">
+                        <rect key="frame" x="0.0" y="0.0" width="95" height="135"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lY1-wW-RgP">
+                        <rect key="frame" x="6" y="101" width="39" height="13.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="YjX-PU-HQw">
+                        <rect key="frame" x="6.9999999999999964" y="116" width="56.666666666666657" height="11"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조회수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vs-Ed-nnH">
+                                <rect key="frame" x="0.0" y="0.0" width="23.666666666666668" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10만회" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kV8-6I-xND">
+                                <rect key="frame" x="30.666666666666664" y="0.0" width="26" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WT4-If-Sl9">
+                        <rect key="frame" x="65" y="0.0" width="24" height="31"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ellipsis" catalog="system">
+                            <backgroundConfiguration key="background"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="lY1-wW-RgP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="0CR-gr-Xbi"/>
+                <constraint firstItem="qt6-ZT-te6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1jy-iE-Zaq"/>
+                <constraint firstAttribute="bottom" secondItem="WT4-If-Sl9" secondAttribute="bottom" constant="104" id="3C7-CV-1tH"/>
+                <constraint firstAttribute="bottom" secondItem="YjX-PU-HQw" secondAttribute="bottom" constant="8" id="IRu-yM-Hl1"/>
+                <constraint firstAttribute="trailing" secondItem="WT4-If-Sl9" secondAttribute="trailing" constant="6" id="Vgt-Yx-XTm"/>
+                <constraint firstItem="YjX-PU-HQw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="7" id="Ww9-Kp-Gi4"/>
+                <constraint firstItem="lY1-wW-RgP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="101" id="ZcB-eP-TGR"/>
+                <constraint firstItem="YjX-PU-HQw" firstAttribute="top" secondItem="lY1-wW-RgP" secondAttribute="bottom" constant="1.6699999999999999" id="g2C-3h-YMk"/>
+                <constraint firstItem="WT4-If-Sl9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hSB-oj-i2E"/>
+                <constraint firstAttribute="trailing" secondItem="lY1-wW-RgP" secondAttribute="trailing" constant="50" id="lgN-yv-F45"/>
+                <constraint firstAttribute="bottom" secondItem="qt6-ZT-te6" secondAttribute="bottom" id="rMW-cr-jVB"/>
+                <constraint firstAttribute="trailing" secondItem="qt6-ZT-te6" secondAttribute="trailing" id="v2Z-Mn-wuM"/>
+                <constraint firstItem="qt6-ZT-te6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="y2Y-ON-Z8R"/>
+            </constraints>
+            <size key="customSize" width="98" height="191"/>
+            <connections>
+                <outlet property="videoView" destination="qt6-ZT-te6" id="m2p-z3-U1o"/>
+            </connections>
+            <point key="canvasLocation" x="165.64885496183206" y="33.450704225352112"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+    </resources>
+</document>
