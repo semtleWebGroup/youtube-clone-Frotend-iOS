@@ -8,10 +8,11 @@
 import UIKit
 
 class HomeVideoTableViewCell: UITableViewCell {
-
+ 
+    @IBOutlet weak var UserprofileImg: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        UserprofileImg.layer.cornerRadius = CGFloat(15)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
