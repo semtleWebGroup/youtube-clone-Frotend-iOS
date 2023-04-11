@@ -19,14 +19,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="로그인이미지" translatesAutoresizingMaskIntoConstraints="NO" id="rtJ-ub-Edk">
-                                <rect key="frame" x="45" y="143" width="302" height="233"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="233" id="ksD-Me-E0r"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="로그인이미지" translatesAutoresizingMaskIntoConstraints="NO" id="rtJ-ub-Edk">
+                                <rect key="frame" x="45" y="143" width="302" height="233.66666666666663"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="J6U-XP-DO5">
-                                <rect key="frame" x="38" y="384" width="316" height="86"/>
+                                <rect key="frame" x="38" y="384.66666666666669" width="316" height="86"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YouTube 최대한 활용하기 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWX-Ve-kka">
                                         <rect key="frame" x="0.0" y="0.0" width="316" height="25.333333333333332"/>
@@ -48,7 +45,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ZZ-aL-19s">
-                                <rect key="frame" x="156" y="558" width="80" height="35"/>
+                                <rect key="frame" x="156" y="558.66666666666663" width="80" height="34.333333333333371"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그인">
@@ -76,10 +73,11 @@
                             <constraint firstItem="rtJ-ub-Edk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="tbl-pT-prw"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5P2-CG-d3a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="980.91603053435108" y="-34.507042253521128"/>
         </scene>
         <!--Item-->
         <scene sceneID="jxr-Br-5lW">
@@ -99,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="1764" y="661"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tab Bar Controller-->
         <scene sceneID="2aC-RG-MVc">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="T2y-ug-PWB" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="T2y-ug-PWB" customClass="HomeTabBarController" customModule="YoutubeClone" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0dM-AP-eaU">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -121,7 +119,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TzL-nV-CLH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="837.40458015267177" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="1764.1221374045801" y="-34.507042253521128"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="t8l-zk-D5s">
@@ -145,11 +143,11 @@
                                                         <rightBarButtonItems>
                                                             <barButtonItem style="plain" id="wcq-BI-CUz">
                                                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="5wK-xC-loY">
-                                                                    <rect key="frame" x="353" y="15" width="24" height="14"/>
+                                                                    <rect key="frame" x="353" y="10" width="24" height="24"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <state key="normal" title="Button"/>
                                                                     <buttonConfiguration key="configuration" style="plain">
-                                                                        <backgroundConfiguration key="background" cornerRadius="50">
+                                                                        <backgroundConfiguration key="background" cornerRadius="15">
                                                                             <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </backgroundConfiguration>
                                                                     </buttonConfiguration>
@@ -346,6 +344,7 @@
                         <outlet property="HeaderView" destination="24Z-en-k1d" id="MTZ-TR-JmV"/>
                         <outlet property="SecondHeaderView" destination="aJb-lb-86c" id="dTl-Rl-B4B"/>
                         <outlet property="SecondheightConstraint" destination="0Id-YR-sbd" id="iO0-94-48O"/>
+                        <outlet property="UserImgBtn" destination="5wK-xC-loY" id="RTJ-Dm-4dd"/>
                         <outlet property="heightConstraint" destination="NJG-ew-f06" id="gTG-xY-6jq"/>
                         <outlet property="naviBar" destination="pOo-Iq-Btv" id="yQg-rX-Hxi"/>
                         <outlet property="tableView" destination="14f-x7-KKq" id="qLd-9Q-K2F"/>
@@ -353,7 +352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mL2-YY-FiA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3365.6488549618321" y="-669.0140845070423"/>
+            <point key="canvasLocation" x="4292.3664122137407" y="-669.0140845070423"/>
         </scene>
         <!--Item-->
         <scene sceneID="6xf-q4-wIw">
@@ -403,7 +402,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RuG-kV-zL7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2439" y="-669"/>
+            <point key="canvasLocation" x="3365.6488549618321" y="-669.0140845070423"/>
         </scene>
         <!--shorts-->
         <scene sceneID="d5m-n9-Awy">
@@ -421,7 +420,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFf-79-q6X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1837" y="-13"/>
+            <point key="canvasLocation" x="2762.5954198473282" y="-13.380281690140846"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LOp-IA-gPc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4Dh-Bt-vsb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qNE-ZJ-9Cc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="m9u-Yn-CXr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m2C-Rt-Y12" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>

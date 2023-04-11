@@ -15,6 +15,18 @@ class HomeShotsVideoTableViewCell: UITableViewCell {
         self.collectionview.dataSource = self
         self.collectionview.delegate = self
         self.collectionview.register(UINib(nibName: "HomeShortsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeShortsCollectionViewCell")
+        
+        let FlowLayout = UICollectionViewFlowLayout()
+        FlowLayout.scrollDirection = .horizontal
+
+        FlowLayout.minimumInteritemSpacing = 10
+        FlowLayout.minimumLineSpacing = 20
+        FlowLayout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right:10 )
+        let width = collectionview.frame.width / 2.5
+        let height = collectionview.frame.height / 1
+        FlowLayout.itemSize = CGSize(width: width, height: height)
+        self.collectionview.collectionViewLayout = FlowLayout
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

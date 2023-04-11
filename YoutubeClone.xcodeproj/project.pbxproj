@@ -21,6 +21,8 @@
 		091473DC29C88A8700985F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091473DB29C88A8700985F08 /* Assets.xcassets */; };
 		091473DF29C88A8700985F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091473DD29C88A8700985F08 /* LaunchScreen.storyboard */; };
 		092FF22729D6FE3D00777548 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FF22629D6FE3D00777548 /* LoginViewController.swift */; };
+		09DE84AC29E4F69E00D52757 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE84AB29E4F69E00D52757 /* UserInfo.swift */; };
+		09DE84AE29E4FA7000D52757 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE84AD29E4FA7000D52757 /* HomeTabBarController.swift */; };
 		83D958B89D2A7D512396B6F8 /* Pods_YoutubeClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8E6F6071DDFDAB8927AA22 /* Pods_YoutubeClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +33,7 @@
 		0900532629D7244D00A84B75 /* HomeShotsVideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeShotsVideoTableViewCell.xib; sourceTree = "<group>"; };
 		0900532929D726E000A84B75 /* HomeShortsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeShortsCollectionViewCell.swift; sourceTree = "<group>"; };
 		0900532A29D726E000A84B75 /* HomeShortsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeShortsCollectionViewCell.xib; sourceTree = "<group>"; };
-		090DF1CA29D7400600F56B77 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		090DF1CA29D7400600F56B77 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		091473CF29C88A8500985F08 /* YoutubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		091473D229C88A8500985F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		091473D429C88A8500985F08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,8 @@
 		091473DE29C88A8700985F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		091473E029C88A8700985F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		092FF22629D6FE3D00777548 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		09DE84AB29E4F69E00D52757 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		09DE84AD29E4FA7000D52757 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		674AA8BA99C99022F399CE76 /* Pods-YoutubeClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeClone.debug.xcconfig"; path = "Target Support Files/Pods-YoutubeClone/Pods-YoutubeClone.debug.xcconfig"; sourceTree = "<group>"; };
 		80B372859553973A445B59A1 /* Pods-YoutubeClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeClone.release.xcconfig"; path = "Target Support Files/Pods-YoutubeClone/Pods-YoutubeClone.release.xcconfig"; sourceTree = "<group>"; };
 		EF8E6F6071DDFDAB8927AA22 /* Pods_YoutubeClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				092FF22529D6FE2300777548 /* Model */,
-				092FF22429D6FE1800777548 /* Controller */,
 				092FF22329D6FE1000777548 /* ViewModel */,
 				092FF22229D6FD5100777548 /* View */,
 				091473D229C88A8500985F08 /* AppDelegate.swift */,
@@ -106,6 +109,8 @@
 		092FF22329D6FE1000777548 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				092FF22429D6FE1800777548 /* Controller */,
+				09DE84AB29E4F69E00D52757 /* UserInfo.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 				0900532629D7244D00A84B75 /* HomeShotsVideoTableViewCell.xib */,
 				0900532929D726E000A84B75 /* HomeShortsCollectionViewCell.swift */,
 				0900532A29D726E000A84B75 /* HomeShortsCollectionViewCell.xib */,
+				09DE84AD29E4FA7000D52757 /* HomeTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,9 +275,11 @@
 				092FF22729D6FE3D00777548 /* LoginViewController.swift in Sources */,
 				0900532329D7243C00A84B75 /* HomeVideoTableViewCell.swift in Sources */,
 				090DF1CB29D7400600F56B77 /* HomeViewController.swift in Sources */,
+				09DE84AE29E4FA7000D52757 /* HomeTabBarController.swift in Sources */,
 				091473D729C88A8500985F08 /* ViewController.swift in Sources */,
 				091473D329C88A8500985F08 /* AppDelegate.swift in Sources */,
 				091473D529C88A8500985F08 /* SceneDelegate.swift in Sources */,
+				09DE84AC29E4F69E00D52757 /* UserInfo.swift in Sources */,
 				0900532729D7244D00A84B75 /* HomeShotsVideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

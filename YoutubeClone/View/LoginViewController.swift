@@ -8,7 +8,10 @@
 import UIKit
 import GoogleSignIn
 
+
 class LoginViewController: UIViewController {
+    //var UserInfo = userinfo.shared
+
     func googleLoginPase() { // 로그인 유저 정보를 들고오는 함수입니다~
             GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
                 guard error == nil else { return }
@@ -28,7 +31,10 @@ class LoginViewController: UIViewController {
                 print(givenName as Any)
                 print(familyName as Any)
                 print(profilePicUrl as Any)
-     
+             //   self.UserInfo.userId = emailAddress
+              /*  self.UserInfo.userImg = profilePicUrl?.absoluteString
+                let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeTabBarController")
+                self.navigationController?.pushViewController(pushVC!, animated: true)*/
             }
         }
     

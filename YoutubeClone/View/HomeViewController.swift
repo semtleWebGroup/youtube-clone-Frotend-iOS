@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController, UIScrollViewDelegate {
+    var UserInfo = userinfo.shared
 
+    @IBOutlet weak var UserImgBtn: UIButton!
     @IBOutlet weak var naviBar: UINavigationBar!
     @IBOutlet weak var HeaderView: UIView!
     @IBOutlet weak var SecondHeaderView: UIScrollView!
@@ -85,6 +88,9 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setConfigure()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+
     }
     
 }
