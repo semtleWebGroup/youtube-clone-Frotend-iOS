@@ -21,8 +21,17 @@
 		091473DC29C88A8700985F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091473DB29C88A8700985F08 /* Assets.xcassets */; };
 		091473DF29C88A8700985F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091473DD29C88A8700985F08 /* LaunchScreen.storyboard */; };
 		092FF22729D6FE3D00777548 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FF22629D6FE3D00777548 /* LoginViewController.swift */; };
+		09C9C9FB2A00E74C00C1E329 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C9C9FA2A00E74C00C1E329 /* AddViewController.swift */; };
+		09D10D142A1A32130061CABC /* ComentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D10D132A1A32130061CABC /* ComentViewController.swift */; };
 		09DE84AC29E4F69E00D52757 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE84AB29E4F69E00D52757 /* UserInfo.swift */; };
 		09DE84AE29E4FA7000D52757 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE84AD29E4FA7000D52757 /* HomeTabBarController.swift */; };
+		09DE84BB29E543E200D52757 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 09DE84B529E539DB00D52757 /* 1.mp4 */; };
+		09DE84BC29E543E400D52757 /* 2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 09DE84B329E539DB00D52757 /* 2.mp4 */; };
+		09DE84BD29E543E700D52757 /* 3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 09DE84B429E539DB00D52757 /* 3.mp4 */; };
+		09DE84BE29E543EA00D52757 /* 4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 09DE84B629E539DB00D52757 /* 4.mp4 */; };
+		09EC79342A18D09500136C84 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC79332A18D09500136C84 /* VideoViewController.swift */; };
+		09EC79372A18D3CB00136C84 /* VideoInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EC79352A18D3CB00136C84 /* VideoInfoTableViewCell.swift */; };
+		09EC79382A18D3CB00136C84 /* VideoInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09EC79362A18D3CB00136C84 /* VideoInfoTableViewCell.xib */; };
 		83D958B89D2A7D512396B6F8 /* Pods_YoutubeClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8E6F6071DDFDAB8927AA22 /* Pods_YoutubeClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +52,17 @@
 		091473DE29C88A8700985F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		091473E029C88A8700985F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		092FF22629D6FE3D00777548 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		09C9C9FA2A00E74C00C1E329 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		09D10D132A1A32130061CABC /* ComentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComentViewController.swift; sourceTree = "<group>"; };
 		09DE84AB29E4F69E00D52757 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		09DE84AD29E4FA7000D52757 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		09DE84B329E539DB00D52757 /* 2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 2.mp4; path = ../../../../Downloads/2.mp4; sourceTree = "<group>"; };
+		09DE84B429E539DB00D52757 /* 3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 3.mp4; path = ../../../../Downloads/3.mp4; sourceTree = "<group>"; };
+		09DE84B529E539DB00D52757 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1.mp4; path = ../../../../Downloads/1.mp4; sourceTree = "<group>"; };
+		09DE84B629E539DB00D52757 /* 4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = 4.mp4; path = ../../../../Downloads/4.mp4; sourceTree = "<group>"; };
+		09EC79332A18D09500136C84 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		09EC79352A18D3CB00136C84 /* VideoInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfoTableViewCell.swift; sourceTree = "<group>"; };
+		09EC79362A18D3CB00136C84 /* VideoInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoInfoTableViewCell.xib; sourceTree = "<group>"; };
 		674AA8BA99C99022F399CE76 /* Pods-YoutubeClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeClone.debug.xcconfig"; path = "Target Support Files/Pods-YoutubeClone/Pods-YoutubeClone.debug.xcconfig"; sourceTree = "<group>"; };
 		80B372859553973A445B59A1 /* Pods-YoutubeClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeClone.release.xcconfig"; path = "Target Support Files/Pods-YoutubeClone/Pods-YoutubeClone.release.xcconfig"; sourceTree = "<group>"; };
 		EF8E6F6071DDFDAB8927AA22 /* Pods_YoutubeClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +101,7 @@
 		091473D129C88A8500985F08 /* YoutubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				09DE84B229E539D000D52757 /* Resource */,
 				092FF22529D6FE2300777548 /* Model */,
 				092FF22329D6FE1000777548 /* ViewModel */,
 				092FF22229D6FD5100777548 /* View */,
@@ -102,6 +121,8 @@
 			children = (
 				092FF22629D6FE3D00777548 /* LoginViewController.swift */,
 				090DF1CA29D7400600F56B77 /* HomeViewController.swift */,
+				09C9C9FA2A00E74C00C1E329 /* AddViewController.swift */,
+				09EC79332A18D09500136C84 /* VideoViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +132,7 @@
 			children = (
 				092FF22429D6FE1800777548 /* Controller */,
 				09DE84AB29E4F69E00D52757 /* UserInfo.swift */,
+				09D10D132A1A32130061CABC /* ComentViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -125,6 +147,8 @@
 				0900532929D726E000A84B75 /* HomeShortsCollectionViewCell.swift */,
 				0900532A29D726E000A84B75 /* HomeShortsCollectionViewCell.xib */,
 				09DE84AD29E4FA7000D52757 /* HomeTabBarController.swift */,
+				09EC79352A18D3CB00136C84 /* VideoInfoTableViewCell.swift */,
+				09EC79362A18D3CB00136C84 /* VideoInfoTableViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -134,6 +158,17 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		09DE84B229E539D000D52757 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				09DE84B529E539DB00D52757 /* 1.mp4 */,
+				09DE84B329E539DB00D52757 /* 2.mp4 */,
+				09DE84B429E539DB00D52757 /* 3.mp4 */,
+				09DE84B629E539DB00D52757 /* 4.mp4 */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		7E4FAE9861783D29E564912D /* Frameworks */ = {
@@ -214,6 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				091473DF29C88A8700985F08 /* LaunchScreen.storyboard in Resources */,
+				09DE84BB29E543E200D52757 /* 1.mp4 in Resources */,
+				09DE84BC29E543E400D52757 /* 2.mp4 in Resources */,
+				09EC79382A18D3CB00136C84 /* VideoInfoTableViewCell.xib in Resources */,
+				09DE84BD29E543E700D52757 /* 3.mp4 in Resources */,
+				09DE84BE29E543EA00D52757 /* 4.mp4 in Resources */,
 				091473DC29C88A8700985F08 /* Assets.xcassets in Resources */,
 				0900532C29D726E000A84B75 /* HomeShortsCollectionViewCell.xib in Resources */,
 				0900532829D7244D00A84B75 /* HomeShotsVideoTableViewCell.xib in Resources */,
@@ -273,9 +313,13 @@
 			files = (
 				0900532B29D726E000A84B75 /* HomeShortsCollectionViewCell.swift in Sources */,
 				092FF22729D6FE3D00777548 /* LoginViewController.swift in Sources */,
+				09EC79342A18D09500136C84 /* VideoViewController.swift in Sources */,
 				0900532329D7243C00A84B75 /* HomeVideoTableViewCell.swift in Sources */,
+				09C9C9FB2A00E74C00C1E329 /* AddViewController.swift in Sources */,
 				090DF1CB29D7400600F56B77 /* HomeViewController.swift in Sources */,
 				09DE84AE29E4FA7000D52757 /* HomeTabBarController.swift in Sources */,
+				09EC79372A18D3CB00136C84 /* VideoInfoTableViewCell.swift in Sources */,
+				09D10D142A1A32130061CABC /* ComentViewController.swift in Sources */,
 				091473D729C88A8500985F08 /* ViewController.swift in Sources */,
 				091473D329C88A8500985F08 /* AppDelegate.swift in Sources */,
 				091473D529C88A8500985F08 /* SceneDelegate.swift in Sources */,

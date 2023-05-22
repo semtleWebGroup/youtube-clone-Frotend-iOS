@@ -22,8 +22,8 @@
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lY1-wW-RgP">
-                        <rect key="frame" x="6" y="101" width="38.333333333333336" height="13.333333333333329"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <rect key="frame" x="6" y="102.33333333333333" width="34.666666666666664" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -77,7 +77,10 @@
             </constraints>
             <size key="customSize" width="98" height="191"/>
             <connections>
+                <outlet property="videoName" destination="lY1-wW-RgP" id="ZJl-dh-vDb"/>
                 <outlet property="videoView" destination="qt6-ZT-te6" id="m2p-z3-U1o"/>
+                <outlet property="viewCountLabel" destination="kV8-6I-xND" id="0Rb-wo-I1Z"/>
+                <outlet property="viewLabel" destination="7Vs-Ed-nnH" id="Ogp-Vn-8uV"/>
             </connections>
             <point key="canvasLocation" x="165.64885496183206" y="33.450704225352112"/>
         </collectionViewCell>

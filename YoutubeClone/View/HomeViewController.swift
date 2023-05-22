@@ -10,7 +10,8 @@ import Kingfisher
 
 class HomeViewController: UIViewController, UIScrollViewDelegate {
     var UserInfo = userinfo.shared
-
+    let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 24, height: 24))
+    
     @IBOutlet weak var UserImgBtn: UIButton!
     @IBOutlet weak var naviBar: UINavigationBar!
     @IBOutlet weak var HeaderView: UIView!
@@ -45,6 +46,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         tableView.delegate = self
         tableView.register(UINib(nibName: "HomeShotsVideoTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeShotsVideoTableViewCell")
         tableView.register(UINib(nibName: "HomeVideoTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeVideoTableViewCell")
+
 
     }
     
@@ -87,6 +89,21 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.delegate = self
+
+        let url = URL(string: UserInfo.userImg!)!
+        let imageModifier = AnyImageModifier { image in
+            let renderer = UIGraphicsImageRenderer(size: CGSize(width: 24, height: 24))
+            let resizedImage = renderer.image { _ in
+                
+                let path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: 24, height: 24), cornerRadius: 15)
+                    path.addClip()
+                image.draw(in: CGRect(x: 0, y: 0, width: 24, height: 24))
+            }
+            return resizedImage
+        }
+
+        UserImgBtn.kf.setImage(with: url, for: .normal, options: [.imageModifier(imageModifier)])
         setConfigure()
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -115,5 +132,21 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 290
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "VideoViewController")
+        pushVC!.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        self.present(pushVC!, animated: true, completion: nil)
+    }
+}
+extension HomeViewController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        if viewController.tabBarItem.title == "1" {
+            
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddViewController") as! AddViewController
+            self.presentPanModal(vc)
+            return false
+        }
+     return true
     }
 }
