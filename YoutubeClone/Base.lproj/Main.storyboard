@@ -515,10 +515,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gk6-qY-FCB">
-                                <rect key="frame" x="0.0" y="59" width="393" height="190"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="249"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="190" id="8ka-eh-qWx"/>
+                                    <constraint firstAttribute="height" constant="249" id="8ka-eh-qWx"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="N1r-fG-gf9">
@@ -534,7 +534,7 @@
                             <constraint firstItem="N1r-fG-gf9" firstAttribute="leading" secondItem="kBM-3D-s9D" secondAttribute="leading" id="5K3-iP-bFb"/>
                             <constraint firstItem="N1r-fG-gf9" firstAttribute="top" secondItem="Gk6-qY-FCB" secondAttribute="bottom" id="dgk-aN-Jl3"/>
                             <constraint firstItem="Gk6-qY-FCB" firstAttribute="leading" secondItem="kBM-3D-s9D" secondAttribute="leading" id="lnL-wW-2op"/>
-                            <constraint firstItem="Gk6-qY-FCB" firstAttribute="top" secondItem="kBM-3D-s9D" secondAttribute="top" id="oJc-xe-lAV"/>
+                            <constraint firstItem="Gk6-qY-FCB" firstAttribute="top" secondItem="kBM-3D-s9D" secondAttribute="top" constant="-59" id="oJc-xe-lAV"/>
                             <constraint firstItem="N1r-fG-gf9" firstAttribute="bottom" secondItem="kBM-3D-s9D" secondAttribute="bottom" id="skT-Ub-LR7"/>
                         </constraints>
                     </view>

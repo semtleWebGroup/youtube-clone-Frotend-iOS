@@ -21,6 +21,10 @@
 		091473DC29C88A8700985F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091473DB29C88A8700985F08 /* Assets.xcassets */; };
 		091473DF29C88A8700985F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091473DD29C88A8700985F08 /* LaunchScreen.storyboard */; };
 		092FF22729D6FE3D00777548 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FF22629D6FE3D00777548 /* LoginViewController.swift */; };
+		0957DA722A210BC200F7F4CB /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957DA712A210BC200F7F4CB /* HomeModel.swift */; };
+		0957DA772A210D3C00F7F4CB /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957DA762A210D3C00F7F4CB /* APIConstants.swift */; };
+		0957DA792A21112A00F7F4CB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957DA782A21112A00F7F4CB /* LoginModel.swift */; };
+		0957DA7B2A21168A00F7F4CB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957DA7A2A21168A00F7F4CB /* LoginViewModel.swift */; };
 		09C9C9FB2A00E74C00C1E329 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C9C9FA2A00E74C00C1E329 /* AddViewController.swift */; };
 		09D10D142A1A32130061CABC /* ComentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D10D132A1A32130061CABC /* ComentViewController.swift */; };
 		09DE84AC29E4F69E00D52757 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE84AB29E4F69E00D52757 /* UserInfo.swift */; };
@@ -52,6 +56,10 @@
 		091473DE29C88A8700985F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		091473E029C88A8700985F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		092FF22629D6FE3D00777548 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0957DA712A210BC200F7F4CB /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		0957DA762A210D3C00F7F4CB /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		0957DA782A21112A00F7F4CB /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		0957DA7A2A21168A00F7F4CB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		09C9C9FA2A00E74C00C1E329 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		09D10D132A1A32130061CABC /* ComentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComentViewController.swift; sourceTree = "<group>"; };
 		09DE84AB29E4F69E00D52757 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -119,6 +127,8 @@
 		092FF22229D6FD5100777548 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				092FF22429D6FE1800777548 /* Controller */,
+				09D10D132A1A32130061CABC /* ComentViewController.swift */,
 				092FF22629D6FE3D00777548 /* LoginViewController.swift */,
 				090DF1CA29D7400600F56B77 /* HomeViewController.swift */,
 				09C9C9FA2A00E74C00C1E329 /* AddViewController.swift */,
@@ -130,9 +140,8 @@
 		092FF22329D6FE1000777548 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				092FF22429D6FE1800777548 /* Controller */,
 				09DE84AB29E4F69E00D52757 /* UserInfo.swift */,
-				09D10D132A1A32130061CABC /* ComentViewController.swift */,
+				0957DA7A2A21168A00F7F4CB /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -156,6 +165,9 @@
 		092FF22529D6FE2300777548 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0957DA712A210BC200F7F4CB /* HomeModel.swift */,
+				0957DA762A210D3C00F7F4CB /* APIConstants.swift */,
+				0957DA782A21112A00F7F4CB /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,10 +327,14 @@
 				092FF22729D6FE3D00777548 /* LoginViewController.swift in Sources */,
 				09EC79342A18D09500136C84 /* VideoViewController.swift in Sources */,
 				0900532329D7243C00A84B75 /* HomeVideoTableViewCell.swift in Sources */,
+				0957DA772A210D3C00F7F4CB /* APIConstants.swift in Sources */,
 				09C9C9FB2A00E74C00C1E329 /* AddViewController.swift in Sources */,
 				090DF1CB29D7400600F56B77 /* HomeViewController.swift in Sources */,
 				09DE84AE29E4FA7000D52757 /* HomeTabBarController.swift in Sources */,
+				0957DA7B2A21168A00F7F4CB /* LoginViewModel.swift in Sources */,
+				0957DA792A21112A00F7F4CB /* LoginModel.swift in Sources */,
 				09EC79372A18D3CB00136C84 /* VideoInfoTableViewCell.swift in Sources */,
+				0957DA722A210BC200F7F4CB /* HomeModel.swift in Sources */,
 				09D10D142A1A32130061CABC /* ComentViewController.swift in Sources */,
 				091473D729C88A8500985F08 /* ViewController.swift in Sources */,
 				091473D329C88A8500985F08 /* AppDelegate.swift in Sources */,

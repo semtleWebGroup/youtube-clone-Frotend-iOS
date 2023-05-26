@@ -11,7 +11,7 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController {
     var UserInfo = userinfo.shared
-
+    var sendlogin = LoginViewModel()
     func googleLoginPase() { // 로그인 유저 정보를 들고오는 함수입니다~
             GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
                 guard error == nil else { return }
@@ -26,6 +26,9 @@ class LoginViewController: UIViewController {
                 let familyName = user.profile?.familyName
                 
                 let profilePicUrl = user.profile?.imageURL(withDimension: 320)
+                self.sendlogin.PostLogin(parameters: LoginRequest(email: "email@apapa.com", password: "password")) { LoginResponse in
+                    print("성공")
+                }
                 print(emailAddress as Any)
                 print(fullName as Any)
                 print(givenName as Any)

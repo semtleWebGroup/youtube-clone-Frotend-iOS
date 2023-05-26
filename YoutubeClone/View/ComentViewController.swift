@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import PanModal
 
 class ComentViewController: UIViewController {
     var UserInfo = userinfo.shared
@@ -32,3 +33,17 @@ class ComentViewController: UIViewController {
     }
     
 }
+extension ComentViewController: PanModalPresentable {
+    var panScrollable: UIScrollView? {
+        return nil
+    }
+
+    var shortFormHeight: PanModalHeight {
+        return .contentHeight(320)
+    }
+
+    var longFormHeight: PanModalHeight {
+        return .maxHeightWithTopInset(0)
+    }
+}
+
