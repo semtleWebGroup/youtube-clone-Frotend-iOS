@@ -10,6 +10,8 @@ class userinfo {
     var userIdx: Int?
     var userId: String?
     var userImg: String?
+    var userName: String?
+    var userJWT: String?
     private init(){}
 
 }

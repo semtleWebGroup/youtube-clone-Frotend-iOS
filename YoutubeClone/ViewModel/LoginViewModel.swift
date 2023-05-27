@@ -9,6 +9,8 @@ import Foundation
 import Alamofire
 
 class LoginViewModel {
+    var UserInfo = userinfo.shared
+    var user:[User] = []
     func PostLogin(parameters: LoginRequest, onCompletion: @escaping (LoginResponse)->Void){
         let url = APIConstants.baseURL + "/auth/login"
         let headers: HTTPHeaders = ["Content-Type": "application/json"]
@@ -17,12 +19,11 @@ class LoginViewModel {
             .responseDecodable(of: LoginResponse.self) { response in
                 switch response.result {
                 case .success(let data):
-                    if let httpResponse = response.response {
-                        let headers = httpResponse.allHeaderFields
-                        for (key, value) in headers {
-                            print("\(key): \(value)")
-                        }
+                    if let authorizationValue = response.response?.allHeaderFields["Authorization"] as? String {
+                        print("\(authorizationValue)")
+                        self.UserInfo.userJWT = authorizationValue
                     }
+                    
                     print(data)
                     onCompletion(data)
                 case .failure(let error):

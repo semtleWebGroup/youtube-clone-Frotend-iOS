@@ -25,6 +25,8 @@
 		0957DA772A210D3C00F7F4CB /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957DA762A210D3C00F7F4CB /* APIConstants.swift */; };
 		0957DA792A21112A00F7F4CB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957DA782A21112A00F7F4CB /* LoginModel.swift */; };
 		0957DA7B2A21168A00F7F4CB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957DA7A2A21168A00F7F4CB /* LoginViewModel.swift */; };
+		0957DA7D2A2132B800F7F4CB /* UploadVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957DA7C2A2132B800F7F4CB /* UploadVideoViewController.swift */; };
+		0957DA7F2A21DCDE00F7F4CB /* UploadVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957DA7E2A21DCDE00F7F4CB /* UploadVideoViewModel.swift */; };
 		09C9C9FB2A00E74C00C1E329 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C9C9FA2A00E74C00C1E329 /* AddViewController.swift */; };
 		09D10D142A1A32130061CABC /* ComentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D10D132A1A32130061CABC /* ComentViewController.swift */; };
 		09DE84AC29E4F69E00D52757 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DE84AB29E4F69E00D52757 /* UserInfo.swift */; };
@@ -60,6 +62,8 @@
 		0957DA762A210D3C00F7F4CB /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		0957DA782A21112A00F7F4CB /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		0957DA7A2A21168A00F7F4CB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0957DA7C2A2132B800F7F4CB /* UploadVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideoViewController.swift; sourceTree = "<group>"; };
+		0957DA7E2A21DCDE00F7F4CB /* UploadVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideoViewModel.swift; sourceTree = "<group>"; };
 		09C9C9FA2A00E74C00C1E329 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		09D10D132A1A32130061CABC /* ComentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComentViewController.swift; sourceTree = "<group>"; };
 		09DE84AB29E4F69E00D52757 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 			children = (
 				092FF22429D6FE1800777548 /* Controller */,
 				09D10D132A1A32130061CABC /* ComentViewController.swift */,
+				0957DA7C2A2132B800F7F4CB /* UploadVideoViewController.swift */,
 				092FF22629D6FE3D00777548 /* LoginViewController.swift */,
 				090DF1CA29D7400600F56B77 /* HomeViewController.swift */,
 				09C9C9FA2A00E74C00C1E329 /* AddViewController.swift */,
@@ -142,6 +147,7 @@
 			children = (
 				09DE84AB29E4F69E00D52757 /* UserInfo.swift */,
 				0957DA7A2A21168A00F7F4CB /* LoginViewModel.swift */,
+				0957DA7E2A21DCDE00F7F4CB /* UploadVideoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -337,8 +343,10 @@
 				0957DA722A210BC200F7F4CB /* HomeModel.swift in Sources */,
 				09D10D142A1A32130061CABC /* ComentViewController.swift in Sources */,
 				091473D729C88A8500985F08 /* ViewController.swift in Sources */,
+				0957DA7D2A2132B800F7F4CB /* UploadVideoViewController.swift in Sources */,
 				091473D329C88A8500985F08 /* AppDelegate.swift in Sources */,
 				091473D529C88A8500985F08 /* SceneDelegate.swift in Sources */,
+				0957DA7F2A21DCDE00F7F4CB /* UploadVideoViewModel.swift in Sources */,
 				09DE84AC29E4F69E00D52757 /* UserInfo.swift in Sources */,
 				0900532729D7244D00A84B75 /* HomeShotsVideoTableViewCell.swift in Sources */,
 			);
