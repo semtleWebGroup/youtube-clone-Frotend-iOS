@@ -11,11 +11,16 @@ import Kingfisher
 class HomeViewController: UIViewController, UIScrollViewDelegate {
     var UserInfo = userinfo.shared
     let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 24, height: 24))
-    
+    var homeviewModel = HomeViewModel()
+    var videoviewModel = VideoViewModel()
     @IBOutlet weak var UserImgBtn: UIButton!
     @IBOutlet weak var naviBar: UINavigationBar!
     @IBOutlet weak var HeaderView: UIView!
     @IBOutlet weak var SecondHeaderView: UIScrollView!
+    var videoinfo: [Video] = []
+    var totalPage: Int = 0
+    var pageVideoCount: Int = 0
+    var imgURL = URL(string:"http://129.154.59.47:80/media/vods/797cd051-aea5-48c5-81b9-c4df7e9ed2db/thumbnail.jpg")
     @IBOutlet weak var tableView: UITableView! {
         
         didSet {
@@ -46,7 +51,12 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         tableView.delegate = self
         tableView.register(UINib(nibName: "HomeShotsVideoTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeShotsVideoTableViewCell")
         tableView.register(UINib(nibName: "HomeVideoTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeVideoTableViewCell")
-
+        homeviewModel.getHomeVideoList(page: 0, size: 30) { VideoListResponse in
+            self.videoinfo = VideoListResponse!.videos
+            self.totalPage = VideoListResponse!.totalPages
+            self.pageVideoCount = VideoListResponse!.numberOfElements
+            self.tableView.reloadData()
+        }
 
     }
     
@@ -113,7 +123,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
 }
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return pageVideoCount * totalPage
     }
     
  
@@ -121,12 +131,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "HomeShotsVideoTableViewCell", for: indexPath) as! HomeShotsVideoTableViewCell
-            // 첫 번째 커스텀 셀을 생성하고 반환합니다.
             return cell
         }
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "HomeVideoTableViewCell", for: indexPath) as! HomeVideoTableViewCell
-            // 첫 번째 커스텀 셀을 생성하고 반환합니다.
+            cell.channelName.text = self.videoinfo[indexPath.row].channelName
+            cell.videoName.text = self.videoinfo[indexPath.row].title
+            cell.viewCount.text = String(self.videoinfo[indexPath.row].viewCount) + "회"
+            let id = self.videoinfo[indexPath.row].id.uuidString.lowercased()
+    
+            cell.UserprofileImg.kf.setImage(with:URL(string:"https://api.dicebear.com/6.x/bottts/png"))
+            cell.videoImg.kf.setImage(with:URL(string:"http://129.154.59.47:80/media/vods/\(id)/thumbnail.jpg"))
             return cell
         }
     }
@@ -134,9 +149,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 290
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "VideoViewController")
-        pushVC!.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-        self.present(pushVC!, animated: true, completion: nil)
+        let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "VideoViewController") as! VideoViewController
+        pushVC.videoId = self.videoinfo[indexPath.row].id.uuidString.lowercased()
+        pushVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        self.present(pushVC, animated: true, completion: nil)
     }
 }
 extension HomeViewController: UITabBarControllerDelegate {

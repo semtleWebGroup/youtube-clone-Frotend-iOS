@@ -339,8 +339,13 @@
             <connections>
                 <outlet property="ComentView" destination="X7L-Zr-6WI" id="Tqn-3h-8VD"/>
                 <outlet property="LikeView" destination="oMK-Nh-bsz" id="fxu-3a-b9R"/>
+                <outlet property="channelName" destination="Lcn-pJ-uzM" id="bng-1J-hK2"/>
                 <outlet property="dislikeBtn" destination="NgS-h4-bJK" id="z0I-8T-q4U"/>
                 <outlet property="likeBtn" destination="N2b-WF-ICF" id="bvH-57-vbO"/>
+                <outlet property="likeCount" destination="ga7-lI-3s7" id="VZc-QA-mrD"/>
+                <outlet property="subCount" destination="Thl-34-ZaJ" id="jhL-st-0cl"/>
+                <outlet property="videoCount" destination="03m-pd-zN4" id="I9Y-cT-0md"/>
+                <outlet property="videoName" destination="1oS-5e-zdf" id="zDZ-e8-fGa"/>
             </connections>
             <point key="canvasLocation" x="200" y="102.8169014084507"/>
         </tableViewCell>

@@ -9,8 +9,10 @@ import UIKit
 
 class VideoViewController: UIViewController {
     @IBOutlet weak var tableview: UITableView!
-    
+    public var videoId:String = ""
     @IBOutlet weak var ViedoView: UIImageView!
+    var videoviewModel = VideoViewModel()
+    var videoInfo:VideoResponse?
     override func viewDidLoad() {
         super.viewDidLoad()
         setConfigure()
@@ -20,6 +22,9 @@ class VideoViewController: UIViewController {
         tableview.delegate = self
         tableview.register(UINib(nibName: "VideoInfoTableViewCell", bundle: nil), forCellReuseIdentifier: "VideoInfoTableViewCell")
         tableview.register(UINib(nibName: "HomeVideoTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeVideoTableViewCell")
+        videoviewModel.getHomeVideoList(videoId: videoId) { VideoResponse in
+            self.videoInfo = VideoResponse!
+        }
     }
 }
 extension VideoViewController: UITableViewDelegate, UITableViewDataSource {

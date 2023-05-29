@@ -25,11 +25,18 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate & UIN
             // 동영상 URL을 기반으로 AVPlayer를 생성합니다.
             self.Uploadvide.videoURL = videoURL
             // 동영상 재생을 시작합니다.
-            print(self.Uploadvide.videoURL)
+
+            print("asd")
         }
         
         // 이미지 피커를 닫습니다.
         picker.dismiss(animated: true, completion: nil)
+        guard let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "UploadVideoViewController") as? UploadVideoViewController else { return }
+                // 화면 전환 애니메이션 설정
+                secondViewController.modalTransitionStyle = .coverVertical
+                // 전환된 화면이 보여지는 방법 설정 (fullScreen)
+                secondViewController.modalPresentationStyle = .fullScreen
+                self.present(secondViewController, animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

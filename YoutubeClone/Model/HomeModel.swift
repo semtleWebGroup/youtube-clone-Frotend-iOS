@@ -8,7 +8,18 @@
 import Foundation
 import Alamofire
 
-class HomeModel {
-    
-    
+struct Video: Codable {
+    let id: UUID
+    let title: String
+    let channelImg: Data?
+    let channelName: String
+    let viewCount: Int
+    let videoSec: TimeInterval
+    let createdTime: String
+}
+struct VideoListResponse: Codable {
+    let totalPages: Int
+    let number: Int
+    let numberOfElements: Int
+    let videos: [Video]
 }

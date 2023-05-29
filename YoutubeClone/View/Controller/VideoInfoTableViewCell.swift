@@ -13,6 +13,11 @@ protocol VideoInfoCellDelegate: AnyObject{
 }
 class VideoInfoTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var likeCount: UILabel!
+    @IBOutlet weak var subCount: UILabel!
+    @IBOutlet weak var channelName: UILabel!
+    @IBOutlet weak var videoCount: UILabel!
+    @IBOutlet weak var videoName: UILabel!
     @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var dislikeBtn: UIButton!
     weak var delegate: VideoInfoCellDelegate?

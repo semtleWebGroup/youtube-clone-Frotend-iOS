@@ -9,6 +9,10 @@ import UIKit
 
 class HomeVideoTableViewCell: UITableViewCell {
  
+    @IBOutlet weak var videoImg: UIImageView!
+    @IBOutlet weak var viewCount: UILabel!
+    @IBOutlet weak var channelName: UILabel!
+    @IBOutlet weak var videoName: UILabel!
     @IBOutlet weak var UserprofileImg: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()

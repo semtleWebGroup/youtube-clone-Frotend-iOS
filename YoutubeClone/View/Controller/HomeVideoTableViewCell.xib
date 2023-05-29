@@ -108,6 +108,10 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="UserprofileImg" destination="cOY-AM-hTV" id="1G1-LR-tEU"/>
+                <outlet property="channelName" destination="v4s-rW-blt" id="SpI-G2-b0A"/>
+                <outlet property="videoImg" destination="jeT-eD-dL9" id="2IY-gw-jfC"/>
+                <outlet property="videoName" destination="jo5-O8-vbF" id="ZzX-Uj-ueY"/>
+                <outlet property="viewCount" destination="RZX-te-w6M" id="ArP-a7-qqM"/>
             </connections>
             <point key="canvasLocation" x="62.595419847328245" y="71.126760563380287"/>
         </tableViewCell>
