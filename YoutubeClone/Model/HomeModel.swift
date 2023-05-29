@@ -10,10 +10,10 @@ import Alamofire
 
 struct Video: Codable {
     let id: UUID
-    let title: String
+    let title: String?
     let channelImg: Data?
-    let channelName: String
-    let viewCount: Int
+    let channelName: String?
+    let viewCount: Int?
     let videoSec: TimeInterval
     let createdTime: String
 }

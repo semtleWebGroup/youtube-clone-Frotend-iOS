@@ -137,7 +137,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "HomeVideoTableViewCell", for: indexPath) as! HomeVideoTableViewCell
             cell.channelName.text = self.videoinfo[indexPath.row].channelName
             cell.videoName.text = self.videoinfo[indexPath.row].title
-            cell.viewCount.text = String(self.videoinfo[indexPath.row].viewCount) + "회"
+            cell.viewCount.text = String(self.videoinfo[indexPath.row].viewCount!) + "회"
             let id = self.videoinfo[indexPath.row].id.uuidString.lowercased()
     
             cell.UserprofileImg.kf.setImage(with:URL(string:"https://api.dicebear.com/6.x/bottts/png"))
@@ -149,8 +149,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 290
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let id = self.videoinfo[indexPath.row].id.uuidString.lowercased()
         let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "VideoViewController") as! VideoViewController
-        pushVC.videoId = self.videoinfo[indexPath.row].id.uuidString.lowercased()
+        pushVC.videoId = UUID(uuidString:id)
         pushVC.modalPresentationStyle = UIModalPresentationStyle.fullScreen
         self.present(pushVC, animated: true, completion: nil)
     }

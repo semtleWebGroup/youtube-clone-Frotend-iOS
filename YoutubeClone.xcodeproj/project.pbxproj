@@ -137,6 +137,7 @@
 		092FF22229D6FD5100777548 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0957DA862A24FB8A00F7F4CB /* UI */,
 				092FF22429D6FE1800777548 /* Controller */,
 				09D10D132A1A32130061CABC /* ComentViewController.swift */,
 				0957DA7C2A2132B800F7F4CB /* UploadVideoViewController.swift */,
@@ -185,6 +186,13 @@
 				0957DA782A21112A00F7F4CB /* LoginModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0957DA862A24FB8A00F7F4CB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		09DE84B229E539D000D52757 /* Resource */ = {
