@@ -1,4 +1,4 @@
-# YouTube 클론코딩 ![Unknown]
+# YouTube 클론코딩 
 ![Unknown](https://github.com/NKLCBJoin/oh_OOTD/assets/114370871/b2b9f620-522e-4df7-87f8-b0f00eaa6935)
 
 
