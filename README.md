@@ -30,6 +30,7 @@
 <details>
 <summary>로그인</summary>
 <div markdown="1">
+
 ![ezgif com-video-to-gif-4](https://github.com/NKLCBJoin/oh_OOTD/assets/114370871/caf9b3f7-ae54-49e5-9fc1-f0ccc13582ec)
 
   - 소셜로그인(구글) 구현 
@@ -40,6 +41,8 @@
 <details>
 <summary>메인 화면 및 쇼츠 </summary>
 <div markdown="1">
+
+
 ![ezgif com-video-to-gif-3](https://github.com/NKLCBJoin/oh_OOTD/assets/114370871/2872d5ce-88b0-4d49-8c39-82db4742d0f7)
   
   -메인화면 및 쇼츠화면
@@ -49,6 +52,7 @@
 <details>
 <summary>영상화면 및 댓글</summary>
 <div markdown="1">
+
 ![ezgif com-video-to-gif-2](https://github.com/NKLCBJoin/oh_OOTD/assets/114370871/def10b58-61a7-4576-a51c-fa12d90c9624)
   
   -영상호출(M3u8)
@@ -59,7 +63,8 @@
 <details>
 <summary>영상업로드</summary>
 <div markdown="1">
-![ezgif com-video-to-gif-7-min](https://github.com/NKLCBJoin/oh_OOTD/assets/114370871/e09a86ff-902d-47c9-b3d9-79521b14b316)
+
+![ezgif com-video-to-gif-7-min](https://github.com/semtleWebGroup/youtube-clone-Frotend-iOS/assets/114370871/8579c72e-1606-4cb4-9034-a498f9acbf7d)
   
   -영상업로드 및 인코딩
 </div>
